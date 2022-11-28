@@ -31,17 +31,16 @@ body{
   
 .output{
     grid-column: 1/-1;  
-    background-color: #000;
-    hanging-punctuation: first;
     color: #fff;
     display:flex;
-    justify-content: space-around; 
+    justify-content: space-evenly;
     align-items: flex-end;
     flex-direction: column;
+    padding: 2rem;
+    border:  2px solid #fff;
     word-wrap: break-word; 
     word-break: break-all;
     overflow: hidden;
-    overflow-wrap: break-word;
     background-color: royalblue;
     transition: 2s;
 
@@ -50,6 +49,7 @@ body{
 
 .output:hover{
     opacity: 0.8;
+    border: none;
     transition: 2s;
 
 }

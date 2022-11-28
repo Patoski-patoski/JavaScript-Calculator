@@ -24,15 +24,16 @@ class Calculator {
     } 
  
     chooseOperation(operation){ 
+        this.operation = operation;
 
-     if(this.currentOutput == '' || isNaN(this.currentOutput)) return
-     if(this.previousOutput != null){
-        this.compute()
-     }
-
-     this.operation = operation;
-     this.previousOutput = this.currentOutput;
-     this.currentOutput = ''
+        if(this.currentOutput == '')return;
+        
+        if(this.previousOutput !== ''){  
+            this.compute()
+        }
+        this.operation = operation;
+        this.previousOutput = this.currentOutput;
+        this.currentOutput = ''
 
 
     }
@@ -42,7 +43,6 @@ class Calculator {
 
         let current = parseFloat(this.currentOutput);
         let previous = parseFloat(this.previousOutput);
-        if(this.previousOutput == null)alert('p')
 
         if(isNaN(current) || isNaN(previous))return
 
@@ -73,10 +73,9 @@ class Calculator {
                 return
         }
 
-        this.previousOutput = computation;
-        this.currentOutput = '';
+        this.previousOutput = undefined
+        this.currentOutput = computation;
         this.operation = undefined;
-        this.chooseOperation(this.previousOutput)
 
     
     }
