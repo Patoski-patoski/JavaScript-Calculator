@@ -6,3 +6,10 @@ https://www.awesomescreenshot.com/video/12872526?key=34902ed53c00bc3a56b3a8b7999
 </p>
 <br>
 
+I have been learning JavaScript classes and watching tutorials on how to understand the applications. After completeing the tutorials, I tried to create a tool using what i've learnt so far. I created a simple calculator.
+
+   Tools used are;
+   JavaScript
+   HTML5
+   CSS3
+   Unsplash
